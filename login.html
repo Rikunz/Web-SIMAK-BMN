@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/loginstyle.css">
 </head>
 <body>
-    <div>
-        <img src="../background/logouin.png" alt="">
+    <div class="logo">
+        <img src="background/logouin.png" alt="">
     </div>
-    <div class="login">
+    <div class="center">
         <h1>Welcome</h1>
-        <form action="proses.html" method="">
-            <input type="text" name="username" placeholder="Username">
-            <br>
-            <br>
-            <input type="text" name="password" placeholder="Password">
-            <br>
-            <br>
-            <input type="submit" value="Login">
+        <form action="dataBarang.html" method="POST">
+            <div class="txt_field">
+                <input type="text" name="username" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" name="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass">Forgot?</div>
+            <input type="submit" value="Login" class="submit">
         </form>
-    </div>
     </div>
 </body>
 </html>
