@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'ubuntu';
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url(../font/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #707370;
+    width: 260px;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar .header .list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0;
+    border-radius: 8px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar .header .list-item img {
+    margin: 0 10px;
+    width: 30px;
+    height: auto;
+}
+
+
+
+.sidebar .description-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.sidebar .illustration {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 10px 0 22px 0;
+    box-sizing: border-box;
+}
+.sidebar .illustration img {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.main .list-item .description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+}
+.main .list-item a{
+    text-decoration: none;
+}
+
+.main .list-item .icon{
+    margin: 0 10px;
+    width: 26px;
+    height: 20px;
+}
+.main .list-item {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+    width: 212px;
+    box-sizing: border-box;
+    transition: all ease-in .2s;
+    cursor: pointer;
+}
+.main .list-item:hover {
+    background: #FF9900;
+    transition: all ease-in .2s;
+}
+
+.main .logout:hover {
+    background: #FA4D76;
+    transition: all ease-in .2s;
+}
