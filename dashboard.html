@@ -1,19 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-</head>
-<body>
-    <image src="background/logouin.png" alt="logouin" width="51" height="61"></image>
-    <image src="background/tulisanuin1.png" alt="tulisanuin" width="130" height="35"></image>
-    <h1> Inventaris UIN Sunan Kalijaga</h1>
-    <p> Luthfanrty Zamzam M</p>
-    <p> Admin </p>
-    <p><a href="index.html"><button>LogOut-></button></a></p>
-    <p><a href="databarang.html"><button>Data Barang</button></a></p>
-    <p><a href="Fakultas"><button>Fakultas/unit</button></a></p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style-sidebar.css" />
+  </head>
+  <body>
+    <div class="container-utama">
+      <div class="sidebar">
+        <div class="header">
+          <div class="list-item">
+            <img src="icon/box-putih.svg" alt="" class="icon" />
+            <span class="description-header">Inventaris UIN Suka</span>
+          </div>
+
+          <div class="illustration">
+            <img src="icon/logouin2.png" alt="" class="logo" />
+          </div>
+        </div>
+        <div class="main">
+          <div class="list-item">
+            <a href="#">
+              <img src="icon/dashboard.svg" alt="" class="icon" />
+              <span class="description">Dashboard</span>
+            </a>
+          </div>
+          <div class="list-item">
+            <a href="#">
+              <img src="icon/databarang.svg" alt="" class="icon" />
+              <span class="description">Data Barang</span>
+            </a>
+          </div>
+          <div class="list-item">
+            <a href="#">
+              <img src="icon/fakultas.svg" alt="" class="icon" />
+              <span class="description">Fakultas/Unit</span>
+            </a>
+          </div>
+          <div class="list-item">
+            <a href="#">
+              <img src="icon/addperson.svg" alt="" class="icon" />
+              <span class="description">Add User</span>
+            </a>
+          </div>
+          <div class="list-item logout">
+            <a href="#">
+              <img src="icon/logout.svg" alt="" class="icon" />
+              <span class="description">Logout</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-right">
+        <!-- <table class="info-akun">
+          <tr class="list-info">
+            <th>Nama</th>
+            <th>Luthfantryzm</th>
+          </tr>
+          <tr class="list-info">
+            <th>Tanggal dibuat</th>
+            <th>21 oktober 2022</th>
+          </tr>
+          <tr class="list-info">
+            <th>Role</th>
+            <th>Admin</th>
+          </tr>
+        </table> -->
+        <div class="info-akun">
+          <div class="info-title">
+            <h1>Informasi Akun</h1>
+          </div>
+
+          <div class="list-info">
+            <div class="left">
+              <span>Nama</span>
+            </div>
+            <div class="right">
+              <span>Luthfantry Zamzam M</span>
+            </div>
+          </div>
+          <div class="list-info">
+            <div class="left">
+              <span>Tanggal dibuat</span>
+            </div>
+            <div class="right">
+              <span>21 Oktober 2022</span>
+            </div>
+          </div>
+          <div class="list-info">
+            <div class="left">
+              <span>Role</span>
+            </div>
+            <div class="right">
+              <span>Admin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
