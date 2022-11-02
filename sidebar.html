@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style-sidebar.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-utama">
         <div class="sidebar">
             <div class="header">
                 <div class="list-item">
@@ -21,12 +21,15 @@
                 </div>
             </div>
             <div class="main">
+                <?php
+                if ($_SESSION['session_roles'] == 'Admin' or $_SESSION['session_roles'] == 'OP'){ ?>
                 <div class="list-item">
-                    <a href="#">
+                    <a href="dashboard.php">
                         <img src="icon/dashboard.svg" alt="" class="icon">
                         <span class="description">Dashboard</span>
                     </a>
                 </div>
+                <?php } ?>
                 <div class="list-item">
                     <a href="#">
                         <img src="icon/databarang.svg" alt="" class="icon">
@@ -34,26 +37,35 @@
                     </a>
                 </div>
                 <div class="list-item">
-                    <a href="#">
+                    <a href="unitfakultas.php">
                         <img src="icon/fakultas.svg" alt="" class="icon">
                         <span class="description">Fakultas/Unit</span>
                     </a>
                 </div>
                 <div class="list-item">
-                    <a href="#">
+                    <a href="room.php">
+                        <img src="icon/ruang.svg" alt="" class="icon">
+                        <span class="description">Ruang</span>
+                    </a>
+                </div>
+                <?php
+                if ($_SESSION['session_roles'] == 'Admin'){ ?>
+                <div class="list-item">
+                    <a href="user.php">
                         <img src="icon/addperson.svg" alt="" class="icon">
                         <span class="description">Add User</span>
                     </a>
                 </div>
+                <?php } ?>
                 <div class="list-item logout">
-                    <a href="#">
+                    <a href="logout.php">
                         <img src="icon/logout.svg" alt="" class="icon">
                         <span class="description">Logout</span>
                     </a>
                 </div>
             </div>
         </div>
-
+        
         <div class="container-right">
            
         </div>
