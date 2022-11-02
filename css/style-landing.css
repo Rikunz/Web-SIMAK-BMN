@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../background/background-landing.png);
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url(../font/poppins/Poppins-Medium.otf);
+}
+@font-face {
+    font-family: 'petrona';
+    src: url(../font/Petrona/Petrona-VariableFont_wght.ttf);
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 55px;
+    color: #fff;
+    text-align: center;
+    font-family: 'poppins';
+}
+
+.landing-button {
+    text-align: center;
+}
+
+.landing-button button {
+    width: 146px;
+    height: 46px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: 0;
+    
+}
+.landing-button button:hover {
+    cursor: pointer;
+    
+}
+.landing-button button p {
+    margin: auto;
+}
+
+.landing-button .login {
+    margin-right: 200px;
+    background-color: #181D1C;
+}
+.landing-button .login p {
+    color: #fff;
+    font-family: 'petrona';
+}
+.landing-button .guest {
+    background-color: #fff;
+}
+.landing-button .guest p {
+    color: #181D1C;
+    font-family: 'petrona';
+}
