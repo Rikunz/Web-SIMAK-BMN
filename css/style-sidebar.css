@@ -22,6 +22,7 @@
     box-sizing: border-box;
     flex-direction: column;
     height: 100vh;
+    transition: all ease-in 0.2s;
 }
 
 .sidebar .header .list-item {
@@ -32,10 +33,11 @@
     border-radius: 8px;
     height: 40px;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
-.sidebar .header .list-item img {
-    margin: 0 10px;
+.sidebar .header .list-item #menu-button img {
+    margin: 0 4px;
     width: 30px;
     height: auto;
 }
@@ -44,9 +46,9 @@
 
 .sidebar .description-header {
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
     color: #fff;
     text-align: center;
 }
@@ -61,6 +63,7 @@
 .sidebar .illustration img {
     width: 120px;
     margin: 0 auto;
+    margin-left: 20px;
 }
 
 .main .list-item .description{
@@ -76,7 +79,7 @@
 }
 
 .main .list-item .icon{
-    margin: 0 10px;
+    margin: 0 0 3px;
     width: 26px;
     height: 20px;
 }
@@ -85,9 +88,9 @@
     margin: auto;
     flex-direction: row;
     align-items: center;
-    padding: 12px 10px;
+    padding: 12px 7px;
     border-radius: 8px;
-    width: 212px;
+    /* width: 212px; */
     box-sizing: border-box;
     transition: all ease-in .2s;
     cursor: pointer;
@@ -107,3 +110,169 @@
     overflow-y: scroll;
     width: 100%;
 }
+.sidebar {
+    width: 87px;
+    transition: all ease-out 0.2s;
+  }
+  
+  .sidebar .description-header {
+    display: none;
+  }
+  .sidebar .illustration {
+    display: none;
+  }
+  .sidebar .list-item .description {
+    display: none;
+  }
+  
+  .sidebar.hide {
+    width: 260px;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .sidebar.hide .description-header {
+    display: contents;
+  }
+
+  .sidebar.hide .illustration {
+    display: contents;
+  }
+  .sidebar.hide .list-item .description {
+    display: contents;
+  }
+  
+  #menu-button {
+    width: 50px;
+    overflow: hidden;
+  }
+  #menu-label {
+    width: 30px;
+    height: 28.38px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  #menu-checkbox {
+    display: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .sidebar {
+      width: 87px;
+      transition: all ease-out 0.2s;
+    }
+  
+    .sidebar .description-header {
+      display: none;
+    }
+    .sidebar .illustration {
+      display: none;
+    }
+    .sidebar .list-item .description {
+      display: none;
+    }
+  
+    .sidebar.hide {
+      width: 260px;
+      padding: 24px;
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .sidebar.hide .description-header {
+      display: contents;
+    }
+    .sidebar.hide .illustration {
+      display: contents;
+    }
+    .sidebar.hide .list-item .description {
+      display: contents;
+    }
+  
+    #menu-button {
+      width: 100%;
+      overflow: hidden;
+    }
+    #menu-label {
+      display: block;
+      height: 40px;
+      cursor: pointer;
+    }
+  
+    #menu-checkbox {
+      display: none;
+    }
+
+    .info-akun {
+        width: 60vw;
+        height: 35vh;
+        position: relative;
+        right: 130px;
+      }
+    
+      .info-akun .info-title h1 {
+        font-size: 1.3em;
+      }
+    
+      .list-info {
+        font-size: 1.1em;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+        .info-akun {
+          width: 60vw;
+          height: 45vh;
+        }
+      
+        .info-akun .info-title h1 {
+          font-size: 1.2em;
+        }
+      
+        .list-info {
+          font-size: 0.8em;
+        }
+      }
+      @media screen and (max-width: 576px) {
+        .info-akun {
+          width: 60vw;
+          height: 40vh;
+          right: 150px;
+        }
+      
+        .info-akun .info-title h1 {
+          font-size: 1em;
+        }
+      
+        .list-info {
+          font-size: 0.6em;
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+        .info-akun {
+          width: 60vw;
+          height: 30vh;
+          right: 170px;
+        }
+      
+        .main .list-item .description {
+          font-size: 0.7em;
+          line-height: 10px;
+        }
+      
+        .sidebar .description-header {
+          font-size: 0.9em;
+          line-height: 12px;
+        }
+      
+        .sidebar .illustration img {
+          width: 100px;
+          margin: 0 auto;
+          align-items: center;
+        }
+      }
