@@ -1,65 +1,104 @@
 * {
     margin: 0;
     padding: 0;
-}
-body {
+  }
+  body {
     background-image: url(../background/background-landing.png);
-}
-
-@font-face {
-    font-family: 'poppins';
-    src: url(../font/poppins/Poppins-Medium.otf);
-}
-@font-face {
-    font-family: 'petrona';
-    src: url(../font/Petrona/Petrona-VariableFont_wght.ttf);
-}
-
-.logo {
+  }
+  
+  @font-face {
+    font-family: "poppins";
+    src: url(../poppins/Poppins-Medium.otf);
+  }
+  @font-face {
+    font-family: "petrona";
+    src: url(../Petrona/Petrona-VariableFont_wght.ttf);
+  }
+  
+  .logo {
     margin-top: 20px;
     margin-left: 20px;
-}
-
-h1 {
-    margin-bottom: 50px;
+  }
+  
+  h1 {
     font-size: 55px;
     color: #fff;
     text-align: center;
-    font-family: 'poppins';
-}
-
-.landing-button {
+    font-family: "poppins";
+  }
+  
+  .landing-button {
     text-align: center;
-}
-
-.landing-button button {
+  }
+  
+  .landing-button button {
     width: 146px;
     height: 46px;
     border-radius: 15px;
     font-size: 20px;
     border: 0;
-    
-}
-.landing-button button:hover {
+    margin-top: 100px;
+  }
+  .landing-button button:hover {
     cursor: pointer;
-    
-}
-.landing-button button p {
+  }
+  .landing-button button p {
     margin: auto;
-}
-
-.landing-button .login {
+  }
+  
+  .landing-button .login {
     margin-right: 200px;
-    background-color: #181D1C;
-}
-.landing-button .login p {
+    background-color: #181d1c;
+  }
+  .landing-button .login p {
     color: #fff;
-    font-family: 'petrona';
-}
-.landing-button .guest {
+    font-family: "petrona";
+  }
+  .landing-button .guest {
     background-color: #fff;
-}
-.landing-button .guest p {
-    color: #181D1C;
-    font-family: 'petrona';
-}
+  }
+  .landing-button .guest p {
+    color: #181d1c;
+    font-family: "petrona";
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .logo img {
+      width: 100px;
+    }
+    h1 {
+      margin-top: 70px;
+      font-size: 2em;
+    }
+  
+    .landing-button {
+      display: flex;
+      flex-direction: column;
+      margin-left: 130px;
+      align-items: center;
+      margin-top: -60px;
+    }
+  
+    .landing-button button {
+      margin-left: 40px;
+      width: 60%;
+    }
+    .guest {
+      margin-right: 200px;
+    }
+  
+    .login {
+      margin-bottom: -50px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.6em;
+    }
+    .landing-button button {
+      margin-left: 50px;
+      width: 100%;
+    }
+  }
+  
